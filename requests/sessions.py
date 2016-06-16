@@ -599,6 +599,8 @@ class Session(SessionRedirectMixin):
                     break
                 request.url = new_url
 
+        dispatch_hook('request', hooks, request, **kwargs)
+
         # Get the appropriate adapter to use
         adapter = self.get_adapter(url=request.url)
 

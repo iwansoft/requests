@@ -11,7 +11,7 @@ Available hooks:
 ``response``:
     The response generated from a Request.
 """
-HOOKS = ['response']
+HOOKS = ['response', 'request']
 
 
 def default_hooks():
